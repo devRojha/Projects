@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McLAREN.com</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous"> 
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    >
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <span class="year">2018-2023</span>
+        <a href="https://en.wikipedia.org/wiki/McLaren" target="_blank" class="logo"><img src="./image/logo.png" alt="logo"></a>
+        <a href="#" class="menu" onclick="toggleMN();"></a>
+    </header>
+    <div class="banner">
+        <ul class="nav">
+            <li><a href="#">Supercars</a></li>
+            <li><a href="#">GT</a></li>
+            <li><a href="#">Ultimate</a></li>
+            <li><a href="#">Solus GT</a></li>
+            <li><a href="#">Legacy</a></li>
+        </ul>
+        <div class="bg-video-list">
+            <video 
+                class="bg-video mac1 active"
+                src="./videos/mclaren-1.mp4"
+                autoplay
+                loop
+                muted
+            ></video>
+            <video 
+                class="bg-video mac2"
+                src="./videos/mclaren-2.mp4"
+                autoplay
+                loop
+                muted
+            ></video>
+            <video 
+                class="bg-video mac3"
+                src="./videos/mclaren-3.mp4"
+                autoplay
+                loop
+                muted
+            ></video>
+            <video 
+                class="bg-video mac4"
+                src="./videos/mclaren-4.mp4"
+                autoplay
+                loop
+                muted
+            ></video>
+            <video 
+                class="bg-video mac5"
+                src="./videos/mclaren-5.mp4"
+                autoplay
+                loop
+                muted
+            ></video>
+        </div>
+        <div class="content">
+            <h1>McLAREN</h1>
+            <h3 class="model mac1 active">765LT SPIDER</h3>
+            <h3 class="model mac2" style="color:rgb(11, 186, 11)">ARTURA</h3>
+            <h3 class="model mac3" style="color:rgba(233, 10, 10, 0.589)">750S</h3>
+            <h3 class="model mac4 " style="color:#ffffff">765LT</h3>
+            <h3 class="model mac5" style="color:silver">750S SPIDER</h3>
+            <p class="article mac1 active">Unveiled on 3 March 2020, the 765LT is a limited (765 units worldwide[21]) version of the 720S and the successor to the 675LT as a Super Series Longtail car, focused on track performance.</p>
+            <p class="article mac2">The McLaren Artura is a hybrid electric sports car designed and manufactured by the British car manufacturer McLaren Automotive since 2022. It is the second hybrid by the company and the first with a V6 engine.</p>
+            <p class="article mac3">The McLaren 720S (McLaren 750S since 2023) is a sports car designed and manufactured by British automobile manufacturer McLaren Automotive. It is the second all-new car in the McLaren Super Series, replacing the 650S beginning in May 2017.</p>
+            <p class="article mac4">Unveiled on 3 March 2020, the 765LT is a limited (765 units worldwide[21]) version of the 720S and the successor to the 675LT as a Super Series Longtail car, focused on track performance.</p>
+            <p class="article mac5">The McLaren 720S (McLaren 750S since 2023) is a sports car designed and manufactured by British automobile manufacturer McLaren Automotive. It is the second all-new car in the McLaren Super Series, replacing the 650S beginning in May 2017.</p>
+            <a href="https://cars.mclaren.com/gb-en/super-series/765lt-spider" target="_blank" class="enq mac1 active">Enquire</a>
+            <a href="https://cars.mclaren.com/gb-en/artura" target="_blank" class="enq mac2 ">Enquire</a>
+            <a href="https://cars.mclaren.com/gb-en/750s" target="_blank" class="enq mac3 ">Enquire</a>
+            <a href="https://cars.mclaren.com/gb-en/super-series/765lt" target="_blank" class="enq mac4 ">Enquire</a>
+            <a href="https://cars.mclaren.com/gb-en/750s-spider" target="_blank" class="enq mac5 ">Enquire</a>
+        </div>
+        <div class="screen">
+            <!-- <div class="shadow"></div> -->
+            <div>
+                <span style="--i:0">
+                    <!-- video data maping by class -->
+                    <video src="./videos/mclaren-1.mp4" class="trailer mac1 screen-video active" autoplay muted loop></video>
+                    <video src="./videos/mclaren-2.mp4" class="trailer mac2 screen-video " autoplay muted loop></video>
+                    <video src="./videos/mclaren-3.mp4" class="trailer mac3 screen-video " autoplay muted loop></video>
+                    <video src="./videos/mclaren-4.mp4" class="trailer mac4 screen-video " autoplay muted loop></video>
+                    <video src="./videos/mclaren-5.mp4" class="trailer mac5 screen-video " autoplay muted loop></video>
+                </span>
+                <span style="--i:1">
+                    <video src="./videos/trailer-1.mp4" class="screen-video" autoplay muted loop></video>
+                </span>
+                <span style="--i:2">
+                    <video src="./videos/trailer-2.mp4" class="screen-video" autoplay muted loop></video>
+                </span>
+                <span style="--i:3">
+                    <video src="./videos/trailer-3.mp4" class="screen-video" autoplay muted loop></video>
+                </span>
+            </div> 
+        </div>
+        <div class="gallary">
+            <div class="carousel">
+                <a class="carousel-item" href="#" onclick="changevideo('mac1');">
+                    <img src="image/cars/mclaren-1.jpg">
+                    <h4>765LT SPIDER</h4>
+                </a>
+                <a class="carousel-item" href="#" onclick="changevideo('mac2');">
+                    <img src="image/cars/mclaren-2.jpg">
+                    <h4 style="color:rgb(11, 186, 11)">ARTURA</h4>
+                </a>
+                <a class="carousel-item" href="#" onclick="changevideo('mac3');">
+                    <img src="image/cars/mclaren-3.jpeg">
+                    <h4 style="color:rgba(233, 10, 10, 0.589)">750S</h4>
+                </a>
+                <a class="carousel-item" href="#" onclick="changevideo('mac4');">
+                    <img src="image/cars/mclaren-4.jpeg">
+                    <h4 style="color:orangered">765LT</h4>
+                </a>
+                <a class="carousel-item" href="#" onclick="changevideo('mac5');">
+                    <img src="image/cars/mclaren-5.jpeg">
+                    <h4 style="color:silver">750S SPIDER</h4>
+                </a>
+              </div>
+        </div>
+        <ul class="social">
+            <li><a href="https://www.facebook.com/McLarenRacing" target="_blank">
+                <i class="bi bi-facebook"></i>
+            </a></li>
+            <li><a href="https://www.youtube.com/@McLaren" target="_blank">
+                <i class="bi bi-youtube"></i>
+            </a></li>
+            <li><a href="https://www.instagram.com/mclaren/" target="_blank">
+                <i class="bi bi-instagram"></i>
+            </a></li>
+        </ul>
+    </div> 
+    <script src="https://code.jquery.com/jquery-3.7.0.js"  ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="index.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.carousel').carousel();
+        });
+    </script>
+</body>
+</html>
